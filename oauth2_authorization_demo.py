@@ -152,3 +152,50 @@ response = requests.post(url = activity_type_url, headers = testHeaders, data = 
 
 #print the json-formatted response:
 print(response.json())
+
+
+
+
+#{
+#    "start_datetime": "2016-12-12T23:32:33.768863Z",
+#    "name": "Sample Workout JSON",
+#    "privacy": "/v7.1/privacy_option/1/",
+#    "aggregates": {
+#        "active_time_total": 10.7,
+#        "torque_min": 10.7,
+#        "power_min": 10.7,
+#        "distance_total": 10.7,
+#        "cadence_max": 10.7,
+#        "speed_max": 10.7,
+#        "speed_min": 10.7,
+#        "heartrate_min": 100,
+#        "cadence_min": 10.7,
+#        "speed_avg": 10.7,
+#        "torque_max": 10.7,
+#        "cadence_avg": 10.7,
+#        "power_avg": 10.7,
+#        "heartrate_max": 160,
+#        "power_max": 10.7,
+#        "elapsed_time_total": 10.7,
+#        "heartrate_avg": 10.7,
+#        "metabolic_energy_total": 10.7,
+#        "torque_avg": 10.7
+#    },
+#    "time_series": {
+#        "distance": [[0, 65], [1, 54], [2, 35]],
+#        "heartrate": [[0, 100], [1, 120], [2, 110]],
+#        "power": [[0, 123], [1, 120], [2, 115]],
+#        "timer_stop": [[1, 1], [3, 4], [8, 20]],
+#        "torque": [[0, 21], [1, 64], [2, 98]],
+#        "steps": [[0, 21], [1, 32], [2, 31]],
+#        "position": [
+#                     [0, {"lat": 31.2672, "lng": -97.743, "elevation": 5}],
+#                     [1, {"lat": 31.2672, "lng": -97.643, "elevation": 5.2}],
+#                     [2, {"lat": 31.2672, "lng": -97.543, "elevation": 5.3}]
+#                     ],
+#                     "speed": [[0, 7.5], [1, 8.5], [2, 8.2]],
+#                     "cadence": [[0, 32], [1, 36], [2, 34]]
+#},
+#    "start_locale_timezone": "US/Central",
+#    "activity_type": "/v7.1/activity_type/11/"
+#}
