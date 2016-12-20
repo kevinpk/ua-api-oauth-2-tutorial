@@ -24,10 +24,10 @@ if CLIENT_ID is None or CLIENT_SECRET is None:
 
 # As a convenience, localhost.mapmyapi.com redirects to localhost.
 redirect_uri = 'http://localhost.mapmyapi.com:12345/callback'
-authorize_url = 'https://api.mapmyfitness.com/v7.1/oauth2/authorize/?' \
+authorize_url = 'https://www.mapmyfitness.com/v7.1/oauth2/authorize/?' \
                 'client_id={0}&response_type=code&redirect_uri={1}'.format(CLIENT_ID, redirect_uri)
 
-print authorize_url
+print 'authurl = ' + authorize_url
 
 
 # Set up a basic handler for the redirect issued by the MapMyFitness 
