@@ -14,8 +14,8 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Store your client ID and secret in your OS's environment using these keys, or
 # redefine these values here.
-CLIENT_ID = 'b6s556bhm7j3qjbx5gts3p5z2jempf35'
-CLIENT_SECRET = 'CBKdcuhVVerTmPJZAyMM84H2PW9MnxcNg3gNhpdFKTY'
+CLIENT_ID = 'musdhqvgx9fgevp9x8hr48u7kca5zhdc'
+CLIENT_SECRET = 'TcUZPmrCsYACpXphmSCubG4WXDyz8EBBY6RTnaBtP5C'
 
 if CLIENT_ID is None or CLIENT_SECRET is None:
     print 'Please ensure $MMF_CLIENT_ID and $MMF_CLIENT_SECRET environment ' \
@@ -123,7 +123,7 @@ response = requests.get(url=activity_type_url, verify=False,
 
 
 # Custom successful request:
-activity_type_url = 'https://api.ua.com/v7.1/workout/?started_after=2014&user=889861'
+activity_type_url = 'https://api.ua.com/v7.1/workout/?started_after=2014&user=44384143'
 response = requests.get(url=activity_type_url, verify=False,
                         headers={'api-key': CLIENT_ID, 'authorization': 'Bearer %s' % access_token['access_token']})
 
@@ -155,6 +155,18 @@ print(response.json())
 
 
 
+
+
+print 'DELETING CREDENTIALS'
+access_token_url = 'https://api.ua.com/v7.1/oauth2/connection/?user_id=44384143&client_id=musdhqvgx9fgevp9x8hr48u7kca5zhdc'
+access_token_data = {}
+testToken = 'Bearer %s' % access_token['access_token']
+print(testToken)
+headers = {'api-key':'musdhqvgx9fgevp9x8hr48u7kca5zhdc','authorization': testToken}
+response = requests.delete(url=access_token_url, data=access_token_data, headers=headers)
+print(response)
+
+#44384143
 
 #{
 #    "start_datetime": "2016-12-12T23:32:33.768863Z",
